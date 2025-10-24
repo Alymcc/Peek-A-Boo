@@ -1,0 +1,15 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'de.gurkenlabs:litiengine:0.8.1'
+}
+
+application {
+    mainClass = 'Peek-A-Boo.Horror'
+}
