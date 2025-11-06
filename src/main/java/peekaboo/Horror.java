@@ -1,11 +1,7 @@
 package peekaboo;
 
-import de.gurkenlabs.litiengine.Game;
-
 public class Horror {
-  public static void main(String[] args) {
-    Game.init();
-    GameLauncher.launch();
-    Game.start();
-  }
+    public static void main(String[] args) {
+        GameLauncher.launch(args);
+    }
 }

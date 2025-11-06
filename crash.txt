@@ -1,4 +1,4 @@
-Thu Nov 06 14:00:59 EST 2025 main threw an exception:
+Thu Nov 06 14:57:43 EST 2025 Thread-0 threw an exception:
 de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
 	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
@@ -6,8 +6,8 @@ de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengi
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
 	at de.gurkenlabs.litiengine.environment.GameWorld.getEnvironment(GameWorld.java:319)
 	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:424)
-	at peekaboo.GameLauncher.launch(GameLauncher.java:16)
-	at peekaboo.Horror.main(Horror.java:8)
+	at peekaboo.GameLauncher.lambda$launch$0(GameLauncher.java:19)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
 	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:111)
 	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:32)
@@ -15,7 +15,7 @@ Caused by: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
 	... 7 more
 Caused by: jakarta.xml.bind.UnmarshalException
  - with linked exception:
-[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/Assets/maps/Map_Party_Room.tmx (No such file or directory)]
+[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/Map_Party_Room.tmx (No such file or directory)]
 	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:221)
 	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
 	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
@@ -24,7 +24,7 @@ Caused by: jakarta.xml.bind.UnmarshalException
 	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
 	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
 	... 9 more
-Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/Assets/maps/Map_Party_Room.tmx (No such file or directory)
+Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/Map_Party_Room.tmx (No such file or directory)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
@@ -48,11 +48,11 @@ Operating System: Mac OS X
 Memory:
 	Max heap size: 6,0 GiB
 	Current heap size: 392,0 MiB
-	Heap used: 8,3 MiB
-	Free heap: 383,7 MiB
+	Heap used: 10,6 MiB
+	Free heap: 381,4 MiB
 Java Version: OpenJDK Runtime Environment 17.0.15+6 
 	Vendor: Eclipse Adoptium
-Uptime: PT0.448S
+Uptime: PT0.941S
 Screens: 1
 	Screen 0: 1710x1107@60hz
 
