@@ -10,7 +10,7 @@ public class GameLauncher {
     }
 
     public static void launch() {
-        String mapPath = "Assets/maps/Map_Party_Room.png";
+        String mapPath = "Assets/maps/Map_Party_Room.tmx";
         String soundPath = "Assets/audio/Menu Music.mp3";
 
         Game.world().loadEnvironment(mapPath);
