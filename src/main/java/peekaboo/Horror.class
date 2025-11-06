@@ -1,0 +1,14 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+package peekaboo;
+
+import de.gurkenlabs.litiengine.Game;
+
+public class Horror {
+   public Horror() {
+   }
+
+   public static void main(String[] args) {
+      Game.init(new String[0]);
+      Game.start();
+   }
+}
