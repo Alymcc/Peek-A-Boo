@@ -3,18 +3,14 @@ package peekaboo;
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.resources.Resources;
 import de.gurkenlabs.litiengine.sound.Sound;
-import de.gurkenlabs.litiengine.sound.Music;
 
 public class GameLauncher {
   public static void launch() {
-   
-    Game.world().loadEnvironment("/Assets/maps/Temp img.PNG");
+    String mapPath = "maps/Temp_img.PNG";
+    String soundPath = "audio/ES_6oth_Christmas_-_par.wav";
 
-    Music ambient = Resources.music().get("Assets/audio/ES_Goth Christmas - par.wav");
+    Game.world().loadEnvironment(mapPath);
+    Sound ambient = Resources.sounds().get(soundPath);
     Game.audio().playMusic(ambient);
-
-
-    Sound creak = Resources.sounds().get("Assets/audio/ES_Spooky Door Squeaking 02 - Epidemic Sound.wav");
-    Game.audio().playSound(creak);
   }
 }

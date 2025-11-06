@@ -6,7 +6,13 @@ plugins {
 repositories {
     mavenCentral()
 }
-
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['Assets']
+        }
+    }
+}
 dependencies {
     implementation 'de.gurkenlabs:litiengine:0.5.2'
 }

@@ -1,5 +1,4 @@
-de nov. 05, 2025 8:42:17 P. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
-SEVERE: Game crashed! :(
+Wed Nov 05 20:42:17 EST 2025 main threw an exception:
 de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
 	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
@@ -41,4 +40,19 @@ Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/map
 	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
 	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
 	... 15 more
+
+====Runtime Information====
+Operating System: Mac OS X
+	Architecture: aarch64
+	Version: 26.0
+Memory:
+	Max heap size: 6,0 GiB
+	Current heap size: 392,0 MiB
+	Heap used: 23,6 MiB
+	Free heap: 368,4 MiB
+Java Version: OpenJDK Runtime Environment 17.0.15+6 
+	Vendor: Eclipse Adoptium
+Uptime: PT0.393S
+Screens: 1
+	Screen 0: 1710x1107@60hz
 
