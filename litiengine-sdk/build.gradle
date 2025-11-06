@@ -1,4 +1,4 @@
-tasks.register <Copy> ("natives") {
+tasks.register "Copy" ("natives") {
   for (dep in configurations.runtimeClasspath.get().files) {
     from(zipTree(dep).files)
     include("**/*.dll", "**/*.so", "**/*.jnilib", "**/*.dylib")
