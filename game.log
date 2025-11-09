@@ -174,3 +174,22 @@ Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/map
 	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
 	... 15 more
 
+de nov. 08, 2025 11:56:41 P. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SEVERE: Game crashed! :(
+de.gurkenlabs.litiengine.resources.ResourceLoadException: java.lang.ClassCastException: Cannot cast de.gurkenlabs.litiengine.environment.tilemap.xml.Tileset to de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1724)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:276)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
+	at de.gurkenlabs.litiengine.environment.GameWorld.getEnvironment(GameWorld.java:319)
+	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:424)
+	at peekaboo.GameLauncher.lambda$launch$0(GameLauncher.java:19)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.lang.ClassCastException: Cannot cast de.gurkenlabs.litiengine.environment.tilemap.xml.Tileset to de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap
+	at java.base/java.lang.Class.cast(Class.java:3492)
+	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
+	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
+	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:32)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:393)
+	... 7 more
+

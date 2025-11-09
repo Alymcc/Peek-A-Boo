@@ -1,45 +1,20 @@
-Thu Nov 06 14:57:43 EST 2025 Thread-0 threw an exception:
-de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
+Sat Nov 08 23:56:41 EST 2025 Thread-0 threw an exception:
+de.gurkenlabs.litiengine.resources.ResourceLoadException: java.lang.ClassCastException: Cannot cast de.gurkenlabs.litiengine.environment.tilemap.xml.Tileset to de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1724)
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:276)
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
 	at de.gurkenlabs.litiengine.environment.GameWorld.getEnvironment(GameWorld.java:319)
 	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:424)
 	at peekaboo.GameLauncher.lambda$launch$0(GameLauncher.java:19)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:111)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.lang.ClassCastException: Cannot cast de.gurkenlabs.litiengine.environment.tilemap.xml.Tileset to de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap
+	at java.base/java.lang.Class.cast(Class.java:3492)
+	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
+	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
 	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:32)
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:393)
 	... 7 more
-Caused by: jakarta.xml.bind.UnmarshalException
- - with linked exception:
-[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/Map_Party_Room.tmx (No such file or directory)]
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:221)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:145)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:154)
-	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
-	... 9 more
-Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/Map_Party_Room.tmx (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
-	... 15 more
 
 ====Runtime Information====
 Operating System: Mac OS X
@@ -47,12 +22,12 @@ Operating System: Mac OS X
 	Version: 26.0
 Memory:
 	Max heap size: 6,0 GiB
-	Current heap size: 392,0 MiB
-	Heap used: 10,6 MiB
-	Free heap: 381,4 MiB
-Java Version: OpenJDK Runtime Environment 17.0.15+6 
-	Vendor: Eclipse Adoptium
-Uptime: PT0.941S
+	Current heap size: 388,0 MiB
+	Heap used: 32,0 MiB
+	Free heap: 356,0 MiB
+Java Version: OpenJDK Runtime Environment 25+36-3489 
+	Vendor: Oracle Corporation
+Uptime: PT1.096S
 Screens: 1
 	Screen 0: 1710x1107@60hz
 
