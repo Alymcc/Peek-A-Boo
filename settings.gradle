@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'GurkNukem'
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+includeBuild ("../litiengine"){
+    dependencySubstitution {
+        substitute module('de.gurkenlabs:litiengine') using project(':litiengine')
+    }
+}

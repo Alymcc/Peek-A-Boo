@@ -1,28 +1,44 @@
 plugins {
-    id 'java'
-    id 'application'
-}
-
-repositories {
-    mavenCentral()
-}
-sourceSets {
-    main {
-        resources {
-            srcDirs = ['Assets']
-        }
-    }
-}
-dependencies {
-    implementation 'de.gurkenlabs:litiengine:0.5.2'
-}
-
-application {
-    mainClass = 'peekaboo.Horror'
+    id("java")
+    id("application")
+    id("com.diffplug.spotless") version "7.0.4"
 }
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
+        languageVersion.set(JavaLanguageVersion.of(21))
     }
 }
+
+// give your project a name
+archivesBaseName = "GURK NUKEM"
+version = "v0.0.1"
+mainClassName = "com.litiengine.gurknukem.Program"
+
+
+dependencies {
+    implementation 'de.gurkenlabs:litiengine'
+}
+
+tasks.withType(Copy).all {
+    duplicatesStrategy 'exclude'
+}
+
+sourceSets {
+    main.java.srcDir "src"
+    main.resources.srcDirs = ["sprites", "audio", "maps", "misc"]
+
+    // main.resources.includes = ["game.litidata"]
+}
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ["--enable-preview"]
+}
+
+tasks.withType(Test).configureEach {
+    jvmArgs += ["--enable-preview"]
+}
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs += ["--enable-preview"]
+}
+

@@ -1,0 +1,37 @@
+plugins {
+  id "java"
+
+  alias libs.plugins.spotless
+  alias libs.plugins.grgit
+  alias libs.plugins.sonarQube
+  alias libs.plugins.semverguru
+
+  id "licensing-defaults"
+  id "sonarqube-defaults"
+}
+
+group = gurkenlabs_group
+
+allprojects {
+  project.version += isTaggedRevision(project.version) ? "" : "-SNAPSHOT"
+  project.getLogger().lifecycle("Set project '{}' version to '{}'.", project.name, project.version)
+}
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
+  targetCompatibility = JavaVersion.VERSION_17
+}
+
+tasks.withType(JavaCompile).configureEach {
+  options.compilerArgs += ["--enable-preview"]
+}
+
+tasks.withType(Test).configureEach {
+  jvmArgs += ["--enable-preview"]
+}
+
+tasks.withType(JavaExec).configureEach {
+  jvmArgs += ["--enable-preview"]
+}

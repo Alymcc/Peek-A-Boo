@@ -1,0 +1,24 @@
+plugins {
+  id "java-library"
+
+  id "encoding-defaults"
+  id "testing-defaults"
+}
+
+dependencies {
+  api libs.mockito.core
+  api libs.junit.jupiter.api
+  api libs.junit.jupiter.params
+  runtimeOnly libs.junit.jupiter.engine
+}
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ["--enable-preview"]
+}
+
+tasks.withType(Test).configureEach {
+    jvmArgs += ["--enable-preview"]
+}
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs += ["--enable-preview"]
+}
