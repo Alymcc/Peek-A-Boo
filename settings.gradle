@@ -5,7 +5,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'GurkNukem'
+rootProject.name = 'Peek A Boo'
 
 dependencyResolutionManagement {
     repositories {
@@ -14,7 +14,4 @@ dependencyResolutionManagement {
 }
 
 includeBuild ("../litiengine"){
-    dependencySubstitution {
-        substitute module('de.gurkenlabs:litiengine') using project(':litiengine')
-    }
 }

@@ -1,10 +1,10 @@
 package com.litiengine.peekaboo;
 
-import com.litiengine.gurknukem.misc.MapGeneration;
-import com.litiengine.gurknukem.screens.IngameScreen;
-import de.gurkenlabs.litiengine.Game;
-import de.gurkenlabs.litiengine.environment.tilemap.IMap;
-import de.gurkenlabs.litiengine.resources.Resources;
+import com.litiengine.peekaboo.misc.MapGeneration;
+import com.litiengine.peekaboo.screens.IngameScreen;
+import com.de.gurkenlabs.litiengine.Game;
+import com.de.gurkenlabs.litiengine.environment.tilemap.IMap;
+import com.de.gurkenlabs.litiengine.resources.Resources;
 import java.awt.Image;
 
 /**
