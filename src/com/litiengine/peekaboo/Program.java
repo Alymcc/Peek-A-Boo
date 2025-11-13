@@ -43,7 +43,7 @@ public class Program {
     Game.screens().add(new IngameScreen());
 
     // load the first level (resources for the map were implicitly loaded from the game file)
-    Game.world().loadEnvironment("level1");
+    Game.world().loadEnvironment("Map_Party_Room.png");
 
     // load a demo map for map generation
     IMap map = MapGeneration.generateRandomizedMap();
