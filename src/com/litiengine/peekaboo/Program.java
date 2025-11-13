@@ -1,11 +1,11 @@
-package com.litiengine.gurknukem;
+package com.litiengine.peekaboo;
 
 import com.litiengine.gurknukem.misc.MapGeneration;
 import com.litiengine.gurknukem.screens.IngameScreen;
-
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.environment.tilemap.IMap;
 import de.gurkenlabs.litiengine.resources.Resources;
+import java.awt.Image;
 
 /**
  * This class provides the main entry point for the LITIengine game "GURK NUKEM".
@@ -20,11 +20,11 @@ public class Program {
    */
   public static void main(String[] args) {
     // set meta information about the game
-    Game.info().setName("GURK NUKEM");
+    Game.info().setName("Peek A Boo");
     Game.info().setSubTitle("");
     Game.info().setVersion("v0.0.2");
-    Game.info().setWebsite("https://github.com/gurkenlabs/litiengine-gurk-nukem");
-    Game.info().setDescription("An example 2D platformer with shooter elements made in the LITIengine");
+    Game.info().setWebsite("https://github.com/Alymcc/Peek-A-Boo.git");
+    Game.info().setDescription("A 2D platformer with horror elements made in the LITIengine");
 
     // init the game infrastructure
     Game.init(args);
