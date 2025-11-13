@@ -1,8 +1,8 @@
-package peekaboo;
+package com.litiengine.peekaboo;
 
-import de.gurkenlabs.litiengine.Game;
-import de.gurkenlabs.litiengine.resources.Resources;
-import de.gurkenlabs.litiengine.sound.Sound;
+import /Peek-A-Boo.Game;
+import .resources.Resources;
+import com.litiengine.peekaboo.sound.Sound;
 
 public class GameLauncher {
     public static void main(String[] args) {
