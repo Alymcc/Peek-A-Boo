@@ -16,8 +16,8 @@ public class GameLauncher {
         new Thread(() -> {
             try {
                 Thread.sleep(500); // short delay to ensure loop is running
-                Game.world().loadEnvironment("Assets/maps/Map_Party_Room - 4K.tsx");
-                Sound ambient = Resources.sounds().get("Assets/audio/Menu Music.mp3");
+                Game.world().loadEnvironment("maps/Map_Party_Room - 4K.tsx");
+                Sound ambient = Resources.sounds().get("audio/Menu Music.mp3");
                 Game.audio().playMusic(ambient);
             } catch (InterruptedException e) {
                 e.printStackTrace();

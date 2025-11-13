@@ -11,9 +11,9 @@ java {
 }
 
 // give your project a name
-archivesBaseName = "GURK NUKEM"
+archivesBaseName = "Peek-A-Boo"
 version = "v0.0.1"
-mainClassName = "com.litiengine.gurknukem.Program"
+mainClassName = "com.litiengine.peekaboo.Program"
 
 
 dependencies {
