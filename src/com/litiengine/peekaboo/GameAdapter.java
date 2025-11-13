@@ -1,4 +1,4 @@
-package de.gurkenlabs.litiengine;
+package com.litiengine.peekaboo;
 
 public interface GameAdapter {
 }

@@ -1,10 +1,11 @@
-package com.litiengine.peekaboo.misc;
+package com.litiengine.peekaboo.misc
 
-import de.gurkenlabs.litiengine.Game;
-import de.gurkenlabs.litiengine.environment.tilemap.IMap;
-import de.gurkenlabs.litiengine.environment.tilemap.MapOrientations;
-import de.gurkenlabs.litiengine.resources.Maps.MapGenerator;
-import de.gurkenlabs.litiengine.resources.Resources;
+
+import litiengine.litiengine.src.main.java.de.gurkenlabs.litiengine;
+import litiengine.environment.tilemap.IMap.java.IMap;
+import com.litiengine.peekaboo.environment.tilemap.MapOrientations;
+import com.litiengine.peekaboo.resources.Maps.MapGenerator;
+import com.litiengine.peekaboo.resources.Resources;
 
 public final class MapGeneration {
 
