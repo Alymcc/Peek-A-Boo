@@ -5,7 +5,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'Peek-A-Boo'
+rootProject.name = 'GurkNukem'
 
 dependencyResolutionManagement {
     repositories {
