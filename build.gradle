@@ -17,6 +17,7 @@ mainClassName = "com.litiengine.peekaboo.Program"
 
 
 dependencies {
+    implementation 'net.java.jinput:jinput:2.0.10'
     implementation 'de.gurkenlabs:litiengine'
 }
 
