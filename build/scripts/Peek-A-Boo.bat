@@ -70,11 +70,11 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\Peek-A-Boo.jar;%APP_HOME%\lib\litiengine-0.5.2.jar;%APP_HOME%\lib\jaxb-impl-3.0.1.jar;%APP_HOME%\lib\jaxb-core-3.0.1.jar;%APP_HOME%\lib\jakarta.xml.bind-api-3.0.1.jar;%APP_HOME%\lib\jinput-2.0.9.jar;%APP_HOME%\lib\vorbisspi-1.0.3.3.jar;%APP_HOME%\lib\jorbis-0.0.17.4.jar;%APP_HOME%\lib\mp3spi-1.9.5.4.jar;%APP_HOME%\lib\tritonus-share-0.3.7.4.jar;%APP_HOME%\lib\javax.activation-api-1.2.0.jar;%APP_HOME%\lib\jakarta.activation-2.0.1.jar;%APP_HOME%\lib\jlayer-1.0.1.4.jar;%APP_HOME%\lib\junit-3.8.2.jar
+set CLASSPATH=%APP_HOME%\lib\Peek-A-Boo-0.1.0.jar;%APP_HOME%\lib\litiengine-0.5.2.jar;%APP_HOME%\lib\vlcj-4.8.2.jar;%APP_HOME%\lib\jaxb-impl-3.0.1.jar;%APP_HOME%\lib\jaxb-core-3.0.1.jar;%APP_HOME%\lib\jakarta.xml.bind-api-3.0.1.jar;%APP_HOME%\lib\jinput-2.0.9.jar;%APP_HOME%\lib\vorbisspi-1.0.3.3.jar;%APP_HOME%\lib\jorbis-0.0.17.4.jar;%APP_HOME%\lib\mp3spi-1.9.5.4.jar;%APP_HOME%\lib\tritonus-share-0.3.7.4.jar;%APP_HOME%\lib\javax.activation-api-1.2.0.jar;%APP_HOME%\lib\vlcj-natives-4.8.1.jar;%APP_HOME%\lib\jakarta.activation-2.0.1.jar;%APP_HOME%\lib\jlayer-1.0.1.4.jar;%APP_HOME%\lib\jna-platform-jpms-5.12.1.jar;%APP_HOME%\lib\jna-jpms-5.12.1.jar;%APP_HOME%\lib\junit-3.8.2.jar
 
 
 @rem Execute Peek-A-Boo
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %PEEK_A_BOO_OPTS%  -classpath "%CLASSPATH%" peekaboo.Horror %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %PEEK_A_BOO_OPTS%  -classpath "%CLASSPATH%" peekaboo.PeekabooMain %*
 
 :end
 @rem End local scope for the variables with windows NT shell

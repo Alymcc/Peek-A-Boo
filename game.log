@@ -1,195 +1,245 @@
-de nov. 05, 2025 8:42:17 P. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+de nov. 27, 2025 1:54:31 A. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
 SEVERE: Game crashed! :(
-de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:276)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
-	at de.gurkenlabs.litiengine.environment.GameWorld.getEnvironment(GameWorld.java:319)
-	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:424)
-	at peekaboo.GameLauncher.launch(GameLauncher.java:10)
-	at peekaboo.Horror.main(Horror.java:8)
-Caused by: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:111)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:32)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:393)
-	... 7 more
-Caused by: jakarta.xml.bind.UnmarshalException
+de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException: jakarta.xml.bind.UnmarshalException
  - with linked exception:
-[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/haunted-house.tmx (No such file or directory)]
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:221)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:145)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:154)
-	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
-	... 9 more
-Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/haunted-house.tmx (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
-	... 15 more
-
-de nov. 06, 2025 2:00:59 P. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
-SEVERE: Game crashed! :(
-de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:276)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
-	at de.gurkenlabs.litiengine.environment.GameWorld.getEnvironment(GameWorld.java:319)
-	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:424)
-	at peekaboo.GameLauncher.launch(GameLauncher.java:16)
-	at peekaboo.Horror.main(Horror.java:8)
-Caused by: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:111)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:32)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:393)
-	... 7 more
-Caused by: jakarta.xml.bind.UnmarshalException
- - with linked exception:
-[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/Assets/maps/Map_Party_Room.tmx (No such file or directory)]
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:221)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:145)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:154)
-	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
-	... 9 more
-Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/Assets/maps/Map_Party_Room.tmx (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
-	... 15 more
-
-de nov. 06, 2025 2:52:41 P. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
-SEVERE: Game crashed! :(
-de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:276)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
-	at de.gurkenlabs.litiengine.environment.GameWorld.getEnvironment(GameWorld.java:319)
-	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:424)
-	at peekaboo.GameLauncher.lambda$launch$0(GameLauncher.java:20)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:111)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:32)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:393)
-	... 7 more
-Caused by: jakarta.xml.bind.UnmarshalException
- - with linked exception:
-[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/Map_Party_Room.tmx (No such file or directory)]
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:221)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:145)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:154)
-	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
-	... 9 more
-Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/Map_Party_Room.tmx (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
-	... 15 more
-
-de nov. 06, 2025 2:57:43 P. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
-SEVERE: Game crashed! :(
-de.gurkenlabs.litiengine.resources.ResourceLoadException: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:276)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
-	at de.gurkenlabs.litiengine.environment.GameWorld.getEnvironment(GameWorld.java:319)
-	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:424)
-	at peekaboo.GameLauncher.lambda$launch$0(GameLauncher.java:19)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:111)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:32)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:393)
-	... 7 more
-Caused by: jakarta.xml.bind.UnmarshalException
- - with linked exception:
-[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/Map_Party_Room.tmx (No such file or directory)]
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:221)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:145)
-	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:154)
-	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
-	... 9 more
-Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo/maps/Map_Party_Room.tmx (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
-	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
-	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
-	... 15 more
-
-de nov. 08, 2025 11:56:41 P. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
-SEVERE: Game crashed! :(
-de.gurkenlabs.litiengine.resources.ResourceLoadException: java.lang.ClassCastException: Cannot cast de.gurkenlabs.litiengine.environment.tilemap.xml.Tileset to de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap
+[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo-/build/resources/sprites/furniture/Furniture.tsx (No such file or directory)]
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:395)
 	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1724)
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:276)
-	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:209)
-	at de.gurkenlabs.litiengine.environment.GameWorld.getEnvironment(GameWorld.java:319)
-	at de.gurkenlabs.litiengine.environment.GameWorld.loadEnvironment(GameWorld.java:424)
-	at peekaboo.GameLauncher.lambda$launch$0(GameLauncher.java:19)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-Caused by: java.lang.ClassCastException: Cannot cast de.gurkenlabs.litiengine.environment.tilemap.xml.Tileset to de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap
-	at java.base/java.lang.Class.cast(Class.java:3492)
-	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:109)
-	at de.gurkenlabs.litiengine.resources.Maps.load(Maps.java:32)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:281)
+	at de.gurkenlabs.litiengine.resources.ResourcesContainer.get(ResourcesContainer.java:213)
+	at de.gurkenlabs.litiengine.environment.tilemap.xml.Tileset.finish(Tileset.java:313)
+	at de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap.finish(TmxMap.java:307)
+	at de.gurkenlabs.litiengine.resources.ResourceBundle.load(ResourceBundle.java:103)
+	at de.gurkenlabs.litiengine.resources.Resources.load(Resources.java:173)
+	at de.gurkenlabs.litiengine.resources.Resources.load(Resources.java:160)
+	at peekaboo.PeekabooMain.main(PeekabooMain.java:22)
+Caused by: de.gurkenlabs.litiengine.environment.tilemap.xml.TmxException: jakarta.xml.bind.UnmarshalException
+ - with linked exception:
+[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo-/build/resources/sprites/furniture/Furniture.tsx (No such file or directory)]
+	at de.gurkenlabs.litiengine.resources.Tilesets.load(Tilesets.java:24)
+	at de.gurkenlabs.litiengine.resources.Tilesets.load(Tilesets.java:13)
 	at de.gurkenlabs.litiengine.resources.ResourcesContainer.loadResource(ResourcesContainer.java:393)
-	... 7 more
+	... 10 more
+Caused by: jakarta.xml.bind.UnmarshalException
+ - with linked exception:
+[java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo-/build/resources/sprites/furniture/Furniture.tsx (No such file or directory)]
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:221)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:145)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:154)
+	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
+	at de.gurkenlabs.litiengine.resources.Tilesets.load(Tilesets.java:20)
+	... 12 more
+Caused by: java.io.FileNotFoundException: /Users/boopysan/Desktop/Peek-A-Boo-/build/resources/sprites/furniture/Furniture.tsx (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:185)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:183)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:665)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:862)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:137)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:629)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
+	... 18 more
 
+de nov. 27, 2025 2:01:02 A. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SEVERE: Game crashed! :(
+java.lang.NumberFormatException: Not a number: 16.0
+	at org.glassfish.jaxb.runtime.DatatypeConverterImpl._parseInt(DatatypeConverterImpl.java:91)
+	at org.glassfish.jaxb.runtime.v2.model.impl.RuntimeBuiltinLeafInfoImpl$18.parse(RuntimeBuiltinLeafInfoImpl.java:698)
+	at org.glassfish.jaxb.runtime.v2.model.impl.RuntimeBuiltinLeafInfoImpl$18.parse(RuntimeBuiltinLeafInfoImpl.java:696)
+	at org.glassfish.jaxb.runtime.v2.runtime.reflect.TransducedAccessor$CompositeTransducedAccessorImpl.parse(TransducedAccessor.java:215)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:180)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:534)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:513)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:137)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:519)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:376)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2736)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:113)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:137)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:629)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:145)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:154)
+	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
+	at de.gurkenlabs.litiengine.resources.ResourceBundle.getResourceBundle(ResourceBundle.java:235)
+	at de.gurkenlabs.litiengine.resources.ResourceBundle.load(ResourceBundle.java:88)
+	at de.gurkenlabs.litiengine.resources.Resources.load(Resources.java:173)
+	at de.gurkenlabs.litiengine.resources.Resources.load(Resources.java:160)
+	at peekaboo.PeekabooMain.main(PeekabooMain.java:22)
+
+de nov. 27, 2025 2:02:27 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground" is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:02:27 A. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SEVERE: Game crashed! :(
+java.lang.NumberFormatException: Not a number: 16.0
+	at org.glassfish.jaxb.runtime.DatatypeConverterImpl._parseInt(DatatypeConverterImpl.java:91)
+	at org.glassfish.jaxb.runtime.v2.model.impl.RuntimeBuiltinLeafInfoImpl$18.parse(RuntimeBuiltinLeafInfoImpl.java:698)
+	at org.glassfish.jaxb.runtime.v2.model.impl.RuntimeBuiltinLeafInfoImpl$18.parse(RuntimeBuiltinLeafInfoImpl.java:696)
+	at org.glassfish.jaxb.runtime.v2.runtime.reflect.TransducedAccessor$CompositeTransducedAccessorImpl.parse(TransducedAccessor.java:215)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:180)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:534)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:513)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:137)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:519)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:376)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2736)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:113)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:137)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:629)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:145)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:154)
+	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
+	at de.gurkenlabs.litiengine.resources.ResourceBundle.getResourceBundle(ResourceBundle.java:235)
+	at de.gurkenlabs.litiengine.resources.ResourceBundle.load(ResourceBundle.java:88)
+	at de.gurkenlabs.litiengine.resources.Resources.load(Resources.java:173)
+	at de.gurkenlabs.litiengine.resources.Resources.load(Resources.java:160)
+	at peekaboo.PeekabooMain.main(PeekabooMain.java:22)
+
+de nov. 27, 2025 2:10:22 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground" is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:10:22 A. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SEVERE: Game crashed! :(
+java.lang.NumberFormatException: Not a number: 16.0
+	at org.glassfish.jaxb.runtime.DatatypeConverterImpl._parseInt(DatatypeConverterImpl.java:91)
+	at org.glassfish.jaxb.runtime.v2.model.impl.RuntimeBuiltinLeafInfoImpl$18.parse(RuntimeBuiltinLeafInfoImpl.java:698)
+	at org.glassfish.jaxb.runtime.v2.model.impl.RuntimeBuiltinLeafInfoImpl$18.parse(RuntimeBuiltinLeafInfoImpl.java:696)
+	at org.glassfish.jaxb.runtime.v2.runtime.reflect.TransducedAccessor$CompositeTransducedAccessorImpl.parse(TransducedAccessor.java:215)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.StructureLoader.startElement(StructureLoader.java:180)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext._startElement(UnmarshallingContext.java:534)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext.startElement(UnmarshallingContext.java:513)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.SAXConnector.startElement(SAXConnector.java:137)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:519)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:376)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2736)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:113)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:137)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:629)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:145)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:154)
+	at de.gurkenlabs.litiengine.util.io.XmlUtilities.read(XmlUtilities.java:98)
+	at de.gurkenlabs.litiengine.resources.ResourceBundle.getResourceBundle(ResourceBundle.java:235)
+	at de.gurkenlabs.litiengine.resources.ResourceBundle.load(ResourceBundle.java:88)
+	at de.gurkenlabs.litiengine.resources.Resources.load(Resources.java:173)
+	at de.gurkenlabs.litiengine.resources.Resources.load(Resources.java:160)
+	at peekaboo.PeekabooMain.main(PeekabooMain.java:22)
+
+de nov. 27, 2025 2:23:05 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:25:57 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:29:51 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:30:43 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:31:02 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:32:46 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:32:47 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:33:26 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:34:25 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:35:38 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:39:16 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:42:45 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 2:44:05 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 3:00:38 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 3:00:39 A. M. de.gurkenlabs.litiengine.DefaultUncaughtExceptionHandler uncaughtException
+SEVERE: Game crashed! :(
+java.lang.UnsatisfiedLinkError: Unable to load library 'vlc':
+dlopen(libvlc.dylib, 0x0009): tried: 'libvlc.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibvlc.dylib' (no such file), '/Users/boopysan/Library/Java/JavaVirtualMachines/openjdk-25/Contents/Home/bin/./libvlc.dylib' (no such file), '/Users/boopysan/Library/Java/JavaVirtualMachines/openjdk-25/Contents/Home/bin/../lib/libvlc.dylib' (no such file), '/usr/lib/libvlc.dylib' (no such file, not in dyld cache), 'libvlc.dylib' (no such file), '/usr/lib/libvlc.dylib' (no such file, not in dyld cache)
+dlopen(libvlc.dylib, 0x0009): tried: 'libvlc.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibvlc.dylib' (no such file), '/Users/boopysan/Library/Java/JavaVirtualMachines/openjdk-25/Contents/Home/bin/./libvlc.dylib' (no such file), '/Users/boopysan/Library/Java/JavaVirtualMachines/openjdk-25/Contents/Home/bin/../lib/libvlc.dylib' (no such file), '/usr/lib/libvlc.dylib' (no such file, not in dyld cache), 'libvlc.dylib' (no such file), '/usr/lib/libvlc.dylib' (no such file, not in dyld cache)
+dlopen(/Users/boopysan/Library/Frameworks/vlc.framework/vlc, 0x0009): tried: '/Users/boopysan/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/boopysan/Library/Frameworks/vlc.framework/vlc' (no such file), '/Users/boopysan/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Library/Frameworks/vlc.framework/vlc' (no such file, not in dyld cache)
+dlopen(/Library/Frameworks/vlc.framework/vlc, 0x0009): tried: '/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/vlc.framework/vlc' (no such file), '/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Library/Frameworks/vlc.framework/vlc' (no such file, not in dyld cache)
+dlopen(/System/Library/Frameworks/vlc.framework/vlc, 0x0009): tried: '/System/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/System/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Library/Frameworks/vlc.framework/vlc' (no such file, not in dyld cache)
+Native library (darwin-aarch64/libvlc.dylib) not found in resource path (/Users/boopysan/Desktop/Peek-A-Boo-/build/classes/java/main:/Users/boopysan/Desktop/Peek-A-Boo-/build/resources/main:/Users/boopysan/.gradle/caches/modules-2/files-2.1/de.gurkenlabs/litiengine/0.5.2/4eda89ade03a6ac5e6a77ea0262ee94862fdef1a/litiengine-0.5.2.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/uk.co.caprica/vlcj/4.8.2/985a60dfc18fcbac09266a3956cc61f80062e6a3/vlcj-4.8.2.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-impl/3.0.1/b2de35b8535302825d945462d2684823dedbf1bb/jaxb-impl-3.0.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-core/3.0.1/9fd8003b748dd66776aa72890fe30313a5a34d1d/jaxb-core-3.0.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/3.0.1/5257932df36ff3e4e6de50429dde946490a6a800/jakarta.xml.bind-api-3.0.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.9/5c05470d6ede64e77b1f24a052ea2650aecf4036/jinput-2.0.9.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/vorbisspi/1.0.3.3/9454df3e9d57bfa5b17292f72c68ac2dbb09de61/vorbisspi-1.0.3.3.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/jorbis/0.0.17.4/19ddf424c59cc8ed548fad5f33037ff82a915aae/jorbis-0.0.17.4.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/mp3spi/1.9.5.4/3bdf9ffd65c157daec8735e127c3705513bd384d/mp3spi-1.9.5.4.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/tritonus-share/0.3.7.4/bdddc55194f9cf7b970dd5f3affcbacb88342b0b/tritonus-share-0.3.7.4.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/javax.activation/javax.activation-api/1.2.0/85262acf3ca9816f9537ca47d5adeabaead7cb16/javax.activation-api-1.2.0.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/uk.co.caprica/vlcj-natives/4.8.1/93be7a26a6f56467163e7be9813f004c68137b13/vlcj-natives-4.8.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.sun.activation/jakarta.activation/2.0.1/828b80e886a52bb09fe41ff410b10b342f533ce1/jakarta.activation-2.0.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/jlayer/1.0.1.4/b8df07ad72b482f7d6e6dee7fed669385e8dd92f/jlayer-1.0.1.4.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform-jpms/5.12.1/dd5c97cb2b74e2f85b708745a8c6127317b023f1/jna-platform-jpms-5.12.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-jpms/5.12.1/3e4c58e97eb819867d9b8d7a3a6005b9cd9987f7/jna-jpms-5.12.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/junit/junit/3.8.2/7e4cde26b53a9a0e3fe5b00d1dbbc7cc1d46060/junit-3.8.2.jar)
+	at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:307)
+	at com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:467)
+	at com.sun.jna.Native.register(Native.java:1774)
+	at com.sun.jna.Native.register(Native.java:1493)
+	at uk.co.caprica.vlcj.binding.lib.LibVlc.<clinit>(LibVlc.java:99)
+	at uk.co.caprica.vlcj.support.version.LibVlcVersion.<init>(LibVlcVersion.java:49)
+	at uk.co.caprica.vlcj.factory.MediaPlayerFactory.checkVersion(MediaPlayerFactory.java:195)
+	at uk.co.caprica.vlcj.factory.MediaPlayerFactory.discoverNativeLibrary(MediaPlayerFactory.java:181)
+	at uk.co.caprica.vlcj.factory.MediaPlayerFactory.<init>(MediaPlayerFactory.java:108)
+	at uk.co.caprica.vlcj.factory.MediaPlayerFactory.<init>(MediaPlayerFactory.java:163)
+	at peekaboo.PeekabooMain.playIntro(PeekabooMain.java:37)
+	at peekaboo.PeekabooMain.main(PeekabooMain.java:33)
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libvlc.dylib, 0x0009): tried: 'libvlc.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibvlc.dylib' (no such file), '/Users/boopysan/Library/Java/JavaVirtualMachines/openjdk-25/Contents/Home/bin/./libvlc.dylib' (no such file), '/Users/boopysan/Library/Java/JavaVirtualMachines/openjdk-25/Contents/Home/bin/../lib/libvlc.dylib' (no such file), '/usr/lib/libvlc.dylib' (no such file, not in dyld cache), 'libvlc.dylib' (no such file), '/usr/lib/libvlc.dylib' (no such file, not in dyld cache)
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:197)
+		... 11 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(libvlc.dylib, 0x0009): tried: 'libvlc.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibvlc.dylib' (no such file), '/Users/boopysan/Library/Java/JavaVirtualMachines/openjdk-25/Contents/Home/bin/./libvlc.dylib' (no such file), '/Users/boopysan/Library/Java/JavaVirtualMachines/openjdk-25/Contents/Home/bin/../lib/libvlc.dylib' (no such file), '/usr/lib/libvlc.dylib' (no such file, not in dyld cache), 'libvlc.dylib' (no such file), '/usr/lib/libvlc.dylib' (no such file, not in dyld cache)
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:210)
+		... 11 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/Users/boopysan/Library/Frameworks/vlc.framework/vlc, 0x0009): tried: '/Users/boopysan/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Users/boopysan/Library/Frameworks/vlc.framework/vlc' (no such file), '/Users/boopysan/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Library/Frameworks/vlc.framework/vlc' (no such file, not in dyld cache)
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:254)
+		... 11 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/Library/Frameworks/vlc.framework/vlc, 0x0009): tried: '/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/vlc.framework/vlc' (no such file), '/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Library/Frameworks/vlc.framework/vlc' (no such file, not in dyld cache)
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:254)
+		... 11 more
+	Suppressed: java.lang.UnsatisfiedLinkError: dlopen(/System/Library/Frameworks/vlc.framework/vlc, 0x0009): tried: '/System/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/System/Library/Frameworks/vlc.framework/vlc' (no such file), '/System/Library/Frameworks/vlc.framework/vlc' (no such file, not in dyld cache)
+		at com.sun.jna.Native.open(Native Method)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:254)
+		... 11 more
+	Suppressed: java.io.IOException: Native library (darwin-aarch64/libvlc.dylib) not found in resource path (/Users/boopysan/Desktop/Peek-A-Boo-/build/classes/java/main:/Users/boopysan/Desktop/Peek-A-Boo-/build/resources/main:/Users/boopysan/.gradle/caches/modules-2/files-2.1/de.gurkenlabs/litiengine/0.5.2/4eda89ade03a6ac5e6a77ea0262ee94862fdef1a/litiengine-0.5.2.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/uk.co.caprica/vlcj/4.8.2/985a60dfc18fcbac09266a3956cc61f80062e6a3/vlcj-4.8.2.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-impl/3.0.1/b2de35b8535302825d945462d2684823dedbf1bb/jaxb-impl-3.0.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-core/3.0.1/9fd8003b748dd66776aa72890fe30313a5a34d1d/jaxb-core-3.0.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/3.0.1/5257932df36ff3e4e6de50429dde946490a6a800/jakarta.xml.bind-api-3.0.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.9/5c05470d6ede64e77b1f24a052ea2650aecf4036/jinput-2.0.9.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/vorbisspi/1.0.3.3/9454df3e9d57bfa5b17292f72c68ac2dbb09de61/vorbisspi-1.0.3.3.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/jorbis/0.0.17.4/19ddf424c59cc8ed548fad5f33037ff82a915aae/jorbis-0.0.17.4.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/mp3spi/1.9.5.4/3bdf9ffd65c157daec8735e127c3705513bd384d/mp3spi-1.9.5.4.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/tritonus-share/0.3.7.4/bdddc55194f9cf7b970dd5f3affcbacb88342b0b/tritonus-share-0.3.7.4.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/javax.activation/javax.activation-api/1.2.0/85262acf3ca9816f9537ca47d5adeabaead7cb16/javax.activation-api-1.2.0.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/uk.co.caprica/vlcj-natives/4.8.1/93be7a26a6f56467163e7be9813f004c68137b13/vlcj-natives-4.8.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.sun.activation/jakarta.activation/2.0.1/828b80e886a52bb09fe41ff410b10b342f533ce1/jakarta.activation-2.0.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/jlayer/1.0.1.4/b8df07ad72b482f7d6e6dee7fed669385e8dd92f/jlayer-1.0.1.4.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform-jpms/5.12.1/dd5c97cb2b74e2f85b708745a8c6127317b023f1/jna-platform-jpms-5.12.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-jpms/5.12.1/3e4c58e97eb819867d9b8d7a3a6005b9cd9987f7/jna-jpms-5.12.1.jar:/Users/boopysan/.gradle/caches/modules-2/files-2.1/junit/junit/3.8.2/7e4cde26b53a9a0e3fe5b00d1dbbc7cc1d46060/junit-3.8.2.jar)
+		at com.sun.jna.Native.extractFromResourcePath(Native.java:1145)
+		at com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:281)
+		... 11 more
+
+de nov. 27, 2025 3:05:01 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 3:08:09 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 3:12:18 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 3:23:50 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 8:48:30 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 8:57:04 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.
+de nov. 27, 2025 9:01:06 A. M. de.gurkenlabs.litiengine.environment.tilemap.xml.TmxMap checkVersion
+WARNING: Tiled version 1.11.2 of map "playground." is greater than the supported version 1.2.x. Some features may not work.

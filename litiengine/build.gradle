@@ -1,37 +1,31 @@
 plugins {
-  id "java"
+  id "java-library"
 
-  alias libs.plugins.spotless
-  alias libs.plugins.grgit
-  alias libs.plugins.sonarQube
-  alias libs.plugins.semverguru
+  alias libs.plugins.gradle.maven.publish
 
-  id "licensing-defaults"
-  id "sonarqube-defaults"
+  id "encoding-defaults"
+  id "publishing-defaults"
+  id "testing-defaults"
 }
 
-group = gurkenlabs_group
-
-allprojects {
-  project.version += isTaggedRevision(project.version) ? "" : "-SNAPSHOT"
-  project.getLogger().lifecycle("Set project '{}' version to '{}'.", project.name, project.version)
+dependencies {
+  implementation libs.jinput
+  implementation libs.bundles.soundlibs
+  implementation libs.javax.activation
+  api libs.xml.api
+  runtimeOnly libs.bundles.xml.runtime
+  testImplementation project(":shared")
+  testImplementation libs.junit.jupiter
+  testRuntimeOnly "org.junit.platform:junit-platform-launcher"
 }
-
-java {
-  toolchain {
-    languageVersion = JavaLanguageVersion.of(21)
-  }
-  targetCompatibility = JavaVersion.VERSION_17
-}
-
 tasks.withType(JavaCompile).configureEach {
-  options.compilerArgs += ["--enable-preview"]
+    options.compilerArgs += ["--enable-preview"]
 }
 
 tasks.withType(Test).configureEach {
-  jvmArgs += ["--enable-preview"]
+    jvmArgs += ["--enable-preview"]
 }
 
 tasks.withType(JavaExec).configureEach {
-  jvmArgs += ["--enable-preview"]
+    jvmArgs += ["--enable-preview"]
 }

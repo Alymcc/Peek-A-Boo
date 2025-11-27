@@ -1,17 +1,1 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        mavenCentral()
-    }
-}
-
 rootProject.name = 'Peek-A-Boo'
-
-dependencyResolutionManagement {
-    repositories {
-        mavenCentral()
-    }
-}
-
-includeBuild ("../litiengine"){
-}
