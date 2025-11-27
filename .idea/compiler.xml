@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="21" />
+    <bytecodeTargetLevel target="21">
+      <module name="Peek-A-Boo.main" target="24" />
+      <module name="Peek-A-Boo.test" target="24" />
+      <module name="peekaboo.Peek-A-Boo" target="24" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="--enable-preview" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Peek-A-Boo.main" options="" />
+      <module name="Peek-A-Boo.test" options="" />
+      <module name="peekaboo.Peek-A-Boo" options="" />
+    </option>
   </component>
 </project>
