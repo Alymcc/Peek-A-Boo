@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4nwtsfdda6s0"
+path="res://.godot/imported/Ring Around Rosie.mp3-ebf6f1a0e8086a97ce10d17d153abdce.mp3str"
+
+[deps]
+
+source_file="res://resources/audio/Music/Ring Around Rosie.mp3"
+dest_files=["res://.godot/imported/Ring Around Rosie.mp3-ebf6f1a0e8086a97ce10d17d153abdce.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

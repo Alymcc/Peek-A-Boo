@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqxn651qabd2m"
+path="res://.godot/imported/Office Lights Out.mp3-2ffacd1038e89620ef96fac79322b931.mp3str"
+
+[deps]
+
+source_file="res://resources/audio/Music/Office Lights Out.mp3"
+dest_files=["res://.godot/imported/Office Lights Out.mp3-2ffacd1038e89620ef96fac79322b931.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
