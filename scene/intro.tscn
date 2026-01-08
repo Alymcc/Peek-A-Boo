@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://7erjuqtlhtcp"]
+
+[ext_resource type="Texture2D" uid="uid://b7o75ev3aa171" path="res://assets/sprites/icon.png" id="2_srnjo"]
+[ext_resource type="Script" uid="uid://ob2n2dfe6xcv" path="res://scripts/intro.gd" id="2_yv8ol"]
+
+[node name="Intro" type="CanvasLayer"]
+script = ExtResource("2_yv8ol")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_top = -134.0
+offset_right = 36.0
+offset_bottom = 198.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_srnjo")
+expand_mode = 1

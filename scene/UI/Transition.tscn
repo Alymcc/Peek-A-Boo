@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceinsn5vw85wu"]
+
+[ext_resource type="Script" uid="uid://ca3rquxcppvtn" path="res://scripts/systems/Transition.gd" id="1_ip324"]
+
+[node name="Transition" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_ip324")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -73.0
+offset_top = -52.0
+offset_right = 686.0
+offset_bottom = 447.0
+color = Color(0.0011974451, 0.0011974451, 0.0011974451, 1)

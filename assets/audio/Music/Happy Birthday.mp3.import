@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cah30142td8t7"
+path="res://.godot/imported/Happy Birthday.mp3-cb903d4142a681522e1212f04f6b7976.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/Music/Happy Birthday.mp3"
+dest_files=["res://.godot/imported/Happy Birthday.mp3-cb903d4142a681522e1212f04f6b7976.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,6 @@
+res://scene/intro.tscn
+res://scripts/intro.gd
+res://scene/main_menu.tscn
+res://scripts/Main_Menu.gd
+res://scripts/player.gd
+res://scene/main.tscn
